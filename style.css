@@ -4,19 +4,25 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     color: #7b838a;
+    overflow-x: hidden;
 }
 
 a {
     text-decoration: none;
 }
 
+.text_uppercase {
+    text-transform: uppercase !important;
+}
+/*Navbar Css */
 .header_area {
     display: flex;
     justify-content: center;
-    position: absolute;
+    position: relative;
     width: 100%;
     z-index: 99;
     transition: backgroung 0.4s, all 0.3s linear;
+    overflow: hidden;
 }
 
 .navbar {
@@ -100,4 +106,87 @@ a {
 
 .active{
     color:  #fdc632;;
+}
+
+/* Home banner Css */
+
+.home_banner {
+    z-index: 1;
+    min-height: 900px;
+    position: relative;
+    background: url(./img/banner.jpg) no-repeat right;
+    background-size: contain;
+    width: 100%;
+
+}
+.banner_inner {
+    display: flex;
+    width: moz-fit-content;
+    position: relative;
+    left: 100px;
+
+    
+}
+.banner_text {
+    width: 850px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    position: relative;
+    padding: 25px;
+    top: 75px;
+    
+}
+.banner_text_small {
+    font-size: 25px;
+    color: #002347;
+    
+}
+.banner_text_large {
+    margin-top: 0;
+    font-size: 48px;
+    color: #002347;
+    font-weight: bolder;
+    line-height: 1.5;
+}
+
+.button_container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.button {
+    background-color: #002347; /* Green */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 4px 30px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+.btn1 {
+    color: #fdc632; 
+    border: 2px solid #002347;
+}
+.btn1:hover {
+    background-color: transparent;
+    color: #002347;
+}
+
+.btn2 {
+    color: #002347;
+    background-color: #fdc632;
+}
+
+.btn2:hover {
+    background-color: #002347;
+    color: #fdc632;
 }
