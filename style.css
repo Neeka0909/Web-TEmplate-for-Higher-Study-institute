@@ -9,13 +9,25 @@ body {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
+    background-color: transparent;
+    color: inherit;
 }
 
 .text_uppercase {
     text-transform: uppercase !important;
 }
 
+.txt_light {
+    color: #ededee;
+}
+
+.txt_ash {
+    color: #7b838a;
+}
+.txt_dark {
+    color: #002347;
+}
 /*Navbar Css */
 .header_area {
     display: flex;
@@ -206,6 +218,44 @@ a {
     color: #fdc632;
 }
 
+/* Welcome area */
+.section_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.sec_left {
+    position: relative;
+    padding: 15px;
+    margin: 25px;
+}
+
+.sec_left img {
+    height: 450px;
+}
+.sec_right {
+    display: flex;
+    width: 450px;
+    margin: 15px;
+    text-align: left;
+    flex-direction: column;
+    
+}
+.sec_right h2 {
+    line-height: 1.25;
+    padding: 15px;
+    font-size: 42px;
+    margin: 0;
+    text-align: ;
+}
+.sec_txt {
+
+    padding: 15px;
+    font-size: 16px;
+    margin: 0;
+}
 /* Feature Area css */
 .section_area {
     padding-bottom: 100px;
@@ -243,6 +293,7 @@ a {
     justify-content: center;
     width: auto;
     height: auto;
+    flex-direction: row;
 }
 .class_card {
     position: relative;
@@ -263,7 +314,6 @@ a {
 .card_headding {
     padding: 10px;
     margin: 5px;
-    color: #002347;
     font-size: 32px;
 }
 
@@ -272,5 +322,48 @@ a {
 }
 
 .class_card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 16px 16px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.heading_center {
+    line-height: 1.5;
+    text-align: center;
+}
+.card_img img {
+    width: 330px;
+    margin: 0;
+}
+
+.card_dark {
+    background: #002347;
+}
+
+/* Tearcher card*/
+
+.card_teacher {
+    margin: 20px;
+    flex-direction: column;
+    background-color:#f3f3f3;
+}
+
+.t_img {
+    margin: 0;
+}
+
+.heading_small {
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Footer area*/
+.footer {
+    color: #ededee;
+    background-color: #002347;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.footer span {
+    color: #fdc632;
 }

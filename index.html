@@ -22,11 +22,11 @@
             </a>
             <div class="nav_list">
                 <ul class="navbar_ul">
-                    <li class="nav_li"><a class="nav_link active" href="http://">Home</a></li>
-                    <li class="nav_li"><a href="">About</a></li>
-                    <li class="nav_li"><a href="">Pages</a></li>
-                    <li class="nav_li"><a href="">Blog</a></li>
-                    <li class="nav_li"><a href="">Content</a></li>
+                    <li class="nav_li"><a class="nav_link active" href="index.html">Home</a></li>
+                    <li class="nav_li"><a href="#welcome">About</a></li>
+                    <li class="nav_li"><a href="#classes">Classes</a></li>
+                    <li class="nav_li"><a href="#topics">Topics</a></li>
+                    <li class="nav_li"><a href="#teachers">Teachers</a></li>
                 </ul>
             </div>
         </div>
@@ -46,10 +46,31 @@
 
     </div>
 </section>
-<!-- Features Part-->
-<section class="section_area">
+<!--Welcome Area-->
+<section id="welcome" class="section_area">
     <div class="section_inner space_top">
-        <h2 class="inner_header ">Our Classes</h2>
+        <div class="section_container">
+            <div class="sec_left">
+                <img src="/img/about.jpg" alt="About Us">
+            </div>
+            <div class="sec_right">
+                <h2>Welcome to our Institute</h2>
+                <p class="sec_txt txt_ash"> Online learning has plenty of benefits for both young learners and their parents alike. It
+                    encourages independence, promotes social interaction and provides convenient time allowances for
+                    completing academic tasks— all things that help enhance a learner’s experience in education anyway
+                    possible . Ultimately, schools looking to implement effective teaching strategies should consider
+                    implementing online learning options for their pupils as well; this allows all parties involved
+                    complete satisfaction when pursuing academic goals! </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Features Part-->
+<section id="classes" class="section_area card_dark">
+    <div class="section_inner space_top">
+        <h2 class="inner_header txt_light">Our Classes</h2>
         <p class="inner_text">If you don’t do your revision properly, you know what’ll happen? YOU SHALL NOT PASS!”</p>
     </div>
     <div class="card_area">
@@ -61,7 +82,7 @@
                         d="M160 442.5C149.1 446.1 139.2 448 128 448C74.98 448 32 405 32 352V64C14.33 64 0 49.67 0 32C0 14.33 14.33 0 32 0H224C241.7 0 256 14.33 256 32C256 49.67 241.7 64 224 64V309.9L175 389.4C165.2 405.4 160 423.8 160 442.5zM96 160H160V64H96V160zM512 0C529.7 0 544 14.33 544 32C544 49.67 529.7 64 512 64V214.9L629.7 406.2C636.4 417.2 640 429.7 640 442.6C640 480.9 608.9 512 570.6 512H261.4C223.1 512 191.1 480.9 191.1 442.6C191.1 429.7 195.6 417.2 202.3 406.2L319.1 214.9V64C302.3 64 287.1 49.67 287.1 32C287.1 14.33 302.3 0 319.1 0L512 0zM384 64V224C384 229.9 382.4 235.7 379.3 240.8L330.5 320H501.5L452.7 240.8C449.6 235.7 448 229.9 448 224V64H384z" />
                 </svg>
             </div>
-            <h2 class="card_headding">Chemistry Class</h2>
+            <h2 class="card_headding txt_dark">Chemistry Class</h2>
             <div class="card_body">
                 <ul>
                     <li>Syllabus Cover</li>
@@ -79,7 +100,7 @@
                         d="M226.4 208.6L184.8 141.9C179.6 133.7 168.3 132 160.7 138.2C130.8 162.3 110.1 197.4 105.1 237.4C103.9 247.2 111.2 256 121 256H200C200 236 210.6 218.6 226.4 208.6zM256 288c17.67 0 32-14.33 32-32s-14.33-32-32-32C238.3 224 224 238.3 224 256S238.3 288 256 288zM285.6 303.3C276.1 308.7 266.9 312 256 312c-10.89 0-20.98-3.252-29.58-8.65l-41.74 66.8c-5.211 8.338-1.613 19.07 7.27 23.29C211.4 402.7 233.1 408 256 408c22.97 0 44.64-5.334 64.12-14.59c8.883-4.219 12.48-14.95 7.262-23.29L285.6 303.3zM351.4 138.2c-7.604-6.145-18.86-4.518-24.04 3.77l-41.71 66.67C301.4 218.6 312 236 312 256h78.96c9.844 0 17.11-8.791 15.91-18.56C401.9 197.5 381.3 162.4 351.4 138.2zM256 16C123.4 16 16 123.4 16 256s107.4 240 240 240c132.6 0 240-107.4 240-240S388.6 16 256 16zM256 432c-97.05 0-176-78.99-176-176S158.1 80 256 80s176 78.95 176 176S353 432 256 432z" />
                 </svg>
             </div>
-            <h2 class="card_headding">Physics Class</h2>
+            <h2 class="card_headding txt_dark">Physics Class</h2>
             <div class="card_body">
                 <ul>
                     <li>Syllabus Cover</li>
@@ -90,9 +111,13 @@
         </div>
         <div class="class_card">
             <div class="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                    <path
+                        d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z" />
+                </svg>
             </div>
-            <h2 class="card_headding">Revision Class</h2>
+            <h2 class="card_headding txt_dark">Revision Class</h2>
             <div class="card_body">
                 <ul>
                     <li>Syllabus Cover</li>
@@ -103,6 +128,94 @@
         </div>
     </div>
 </section>
+<!--Topics area-->
+<section id="topics" class="section_area">
+    <div class="section_inner space_top">
+        <h2 class="inner_header">Topics</h2>
+        <p class="inner_text">The best Topics of the Lessons</p>
+    </div>
+    <div class="card_area">
+        <div class="class_card card_dark">
+            <div class="card_img">
+                <img src="./img/organic.jpg" alt="Organic Chemistry Class">
+            </div>
+            <h2 class="card_headding heading_center txt_light" >Organic Chemistry Class</h2>
+            <div class="txt_light">
+                <ul>
+                    <li>Instructor - Dr.Saman Perera</li>
+                    <li>Past Papers Answers</li>
+                    <li>Model Papers Practrice for Organic Chemistry</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card_area">
+            <div class="class_card card_dark">
+                <div class="card_img">
+                    <img src="./img/electronic.jpg" alt="Organic Chemistry Class">
+                </div>
+                <h2 class="card_headding heading_center txt_light" >Electronic Physics Class</h2>
+                <div class="txt_light ">
+                    <ul>
+                        <li>Instructor - Dr.Nimal Santha</li>
+                        <li>Past Papers Answers</li>
+                        <li>Model Papers Practrice for Structured Essay Questions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+<!--Teachers area-->
+<section id="teachers" class="section_area">
+    <div class="section_inner space_top">
+        <h2 class="inner_header">Our Teachers</h2>
+        <p class="inner_text">We have most experienced and knowledgeable Persons for you</p>
+    </div>
+    <div class="card_area">
+        <div class="card_teacher">
+            <div class="t_img">
+                <img src="/img/teachers/t1.jpg" alt="Dr.Sarath Vikramasinhe">
+            </div>
+            <h2 class="card_headding heading_small txt_dark">Dr.Sarath Vikramasinhe</h2>
+            <div class="card_body">
+                <ul>
+                    <li>Chemistry Tutor</li>
+                    <li>15 Years experience</li>
+                    
+                </ul>
+            </div>
 
+        </div>
+        <div class="card_teacher">
+            <div class="t_img">
+                <img src="/img/teachers/t2.jpg" alt="Dr.Saman Dikvalla">
+            </div>
+            <h2 class="card_headding heading_small txt_dark">Dr.Saman Dikvalla</h2>
+            <div class="card_body">
+                <ul>
+                    <li>Physics Tutor</li>
+                    <li>20 Years experience</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card_teacher">
+            <div class="t_img">
+                <img src="/img/teachers/t3.jpg" alt="Dr. pradeep Kothalavala">
+            </div>
+            <h2 class="card_headding heading_small txt_dark">Dr.Pradeep Kothalavala</h2>
+            <div class="card_body">
+                <ul>
+                    <li>Physics Tutor (Revision)</li>
+                    <li>25 Years experience</li>
+                    <li>Best Revision Results</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
+<footer class="footer">
+    <p>Copyright ©2022 All rights reserved | Code by <span>R.Nisal Viumkthi (S14809)</span> </p>
+</footer>
 </html>
