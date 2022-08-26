@@ -5,6 +5,7 @@ body {
     font-weight: 400;
     color: #7b838a;
     overflow-x: hidden;
+    margin: 0;
 }
 
 a {
@@ -14,15 +15,17 @@ a {
 .text_uppercase {
     text-transform: uppercase !important;
 }
+
 /*Navbar Css */
 .header_area {
     display: flex;
     justify-content: center;
-    position: relative;
+    position: fixed;
     width: 100%;
     z-index: 99;
     transition: backgroung 0.4s, all 0.3s linear;
     overflow: hidden;
+    background-color: azure;
 }
 
 .navbar {
@@ -88,11 +91,13 @@ a {
     list-style: none;
     color: black;
 }
+
 .nav_li a {
     text-decoration: none;
 
 }
-.nav_li a:hover{
+
+.nav_li a:hover {
     color: #fdc632;
     transition: all 0.3s ease-in-out;
 }
@@ -101,11 +106,12 @@ a {
     color: #002347;
     padding: 0px;
     display: inline-block;
-    
+
 }
 
-.active{
-    color:  #fdc632;;
+.active {
+    color: #fdc632;
+    ;
 }
 
 /* Home banner Css */
@@ -119,14 +125,16 @@ a {
     width: 100%;
 
 }
+
 .banner_inner {
     display: flex;
     width: moz-fit-content;
     position: relative;
     left: 100px;
 
-    
+
 }
+
 .banner_text {
     width: 850px;
     flex-direction: column;
@@ -135,13 +143,16 @@ a {
     position: relative;
     padding: 25px;
     top: 75px;
-    
+    transition-duration: 0.4s;
+
 }
+
 .banner_text_small {
     font-size: 25px;
     color: #002347;
-    
+
 }
+
 .banner_text_large {
     margin-top: 0;
     font-size: 48px;
@@ -155,8 +166,10 @@ a {
     display: flex;
     justify-content: center;
 }
+
 .button {
-    background-color: #002347; /* Green */
+    background-color: #002347;
+    /* Green */
     border: none;
     border-radius: 5px;
     color: white;
@@ -169,13 +182,15 @@ a {
     margin: 4px 30px;
     transition-duration: 0.4s;
     cursor: pointer;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
+
 .btn1 {
-    color: #fdc632; 
+    color: #fdc632;
     border: 2px solid #002347;
 }
+
 .btn1:hover {
     background-color: transparent;
     color: #002347;
@@ -189,4 +204,73 @@ a {
 .btn2:hover {
     background-color: #002347;
     color: #fdc632;
+}
+
+/* Feature Area css */
+.section_area {
+    padding-bottom: 100px;
+    display: block;
+}
+
+.space_top {
+    padding-top: 130px;
+}
+.section_inner {
+    display: flex;
+    justify-content: center;
+    color: #002347;
+}
+
+.inner_header {
+    position: absolute;
+    padding: 15px;
+    font-size: 42px;
+    margin: 0;
+}
+
+.inner_text {
+    position: relative;
+    color: #7b838a;
+    padding: 15px;
+    margin: 25px;
+    top: 25px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+.card_area {
+    display: flex;
+    position: inherit;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+.class_card {
+    position: relative;
+    background: #ededee;
+    padding: 40px 36px;
+    margin: 30px;
+    transition:  0.3s ease 0s;
+    width: 325px;
+    border: none;
+}
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    margin: 5px;
+    fill: #002347;
+}
+.card_headding {
+    padding: 10px;
+    margin: 5px;
+    color: #002347;
+    font-size: 32px;
+}
+
+.card_body {
+    color: #002347;
+}
+
+.class_card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
