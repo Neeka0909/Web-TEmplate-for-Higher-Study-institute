@@ -341,11 +341,17 @@ a {
 /* Tearcher card*/
 
 .card_teacher {
-    margin: 20px;
-    flex-direction: column;
-    background-color:#f3f3f3;
+    position: relative;
+    background: #ededee;
+    margin: 30px;
+    transition:  0.3s ease 0s;
+    border: none;
 }
 
+
+.card_teacher:hover {
+    box-shadow: 0 16px 16px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .t_img {
     margin: 0;
 }
